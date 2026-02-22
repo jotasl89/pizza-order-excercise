@@ -40,9 +40,9 @@ public class PizzaOrderTask {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        throw new LHTaskException("Payment failed", "Payment failed"); // Simular fallo de pago
-        // return pizzaOrderService.updateOrderStatus(orderId,
-        // OrderStatus.PAYMENT_CONFIRMED, "Payment confirmed");
+        // throw new LHTaskException("Payment failed", "Payment failed"); // Simular fallo de pago
+        return pizzaOrderService.updateOrderStatus(orderId,
+        OrderStatus.PAYMENT_CONFIRMED, "Payment confirmed");
     }
 
     @LHTaskMethod(PREPARE_PIZZA_TASK)
