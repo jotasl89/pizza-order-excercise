@@ -93,4 +93,6 @@ java -jar target/quarkus-app/quarkus-run.jar
 - LittleHorse (workflows y tasks)
 - Hibernate ORM + Panache
 - PostgreSQL
+- UnitTest
+- Mockito
 - OpenAPI / Swagger UI

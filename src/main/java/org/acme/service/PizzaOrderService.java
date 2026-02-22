@@ -5,15 +5,10 @@ import org.acme.repository.PizzaOrderRepository;
 
 import io.littlehorse.sdk.common.proto.RunWfRequest;
 import io.littlehorse.sdk.common.proto.WfRun;
-import io.littlehorse.sdk.common.proto.WorkflowEventDefId;
-import io.smallrye.mutiny.Uni;
 import io.littlehorse.sdk.common.LHLibUtil;
-import io.littlehorse.sdk.common.proto.AwaitWorkflowEventRequest;
 import io.littlehorse.sdk.common.proto.LittleHorseGrpc.LittleHorseBlockingStub;
 
-import java.time.Duration;
 import java.util.Random;
-import java.util.UUID;
 
 import org.acme.dto.PizzaOrderResponse;
 import org.acme.entity.PizzaOrder;
